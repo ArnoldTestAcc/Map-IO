@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/place_of_interest"
+            android:id="@+id/location_name_text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/distance_layout"
+            android:layout_below="@+id/location_name_text">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10km"
+                android:id="@+id/location_distance_text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/estimated_time_layout"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/distance_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estimated_time"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_5_mins"
+                android:id="@+id/location_est_time_text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/address_layout"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/estimated_time_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:id="@+id/address_text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/city_layout"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/address_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:id="@+id/city_text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/province_layout"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/city_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/province_state"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:id="@+id/province_text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/country_layout"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/province_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:id="@+id/country_text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/postalCode_layout"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/country_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/postalcode"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:id="@+id/postalCode_text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

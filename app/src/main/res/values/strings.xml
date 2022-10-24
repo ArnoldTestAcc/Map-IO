@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Map-IO</string>
+    <string name="title_activity_maps">Map-IO</string>
+    <string name="api_key">AIzaSyA8FOrxMdV3QY7WPEEFxP1ds29btpKC3u4</string>
+    <string name="place_of_interest">Place of Interest</string>
+    <string name="distance">Distance:</string>
+    <string name="_10km">10KM</string>
+    <string name="estimated_time">Estimated Time:</string>
+    <string name="_5_mins">5 mins</string>
+    <string name="address">Address:</string>
+    <string name="n_a">N/A</string>
+    <string name="city">City: </string>
+    <string name="province_state">Province/State:</string>
+    <string name="country">Country:</string>
+    <string name="postalcode">PostalCode:</string>
+    <string name="todo">TODO</string>
+</resources>
